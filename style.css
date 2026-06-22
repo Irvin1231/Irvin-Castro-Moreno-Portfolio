@@ -371,4 +371,15 @@ body {
     .contenedor-experiencia{
         width: 93%;
     }
+    #cursos{
+        flex-direction: column;
+    }
+    .contenedor-cursos{
+        width: 98%;
+        flex-direction: column;
+    }
+    .curs{
+        height: auto;
+        width: auto;
+    }
 }
