@@ -33,7 +33,7 @@
     margin-left: 30px;
 }
 .logo img{
-        margin-top: 4px;
+    margin-top: 4px;
     width: 60px;
     height: 60x;
     border-radius: 50%;
@@ -93,6 +93,11 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
+    
+
+
+     
+    
 }
 .dato{
     margin-left: 5%;
@@ -330,17 +335,40 @@ body {
     border-radius: 15px;
     padding: 20px;
 }
-/*Adaptació para telefonos*/
+
+/*Adaptación para movil*/
 @media (max-width: 1230px) {
+    #mi-menu{
+        height: auto; /* Valor por defecto */
+        min-height: auto;
+        position: fixed;
+    }
+    #mi-menu ul{
+        flex-direction: column;
+    }
+    body {
+    padding-top: 160px; 
+    margin: 0; 
+    }
     #inicio{
         flex-direction: column;
     }
     .dato{
-        width: 100%;
+        width: 93%;
     }
     .ubi h1{
         font-size: 20px;
     }
+    #proyecto{
+        flex-direction: column;;
+    }
+    .contenedor-cajas{
+        flex-direction: column;
+    }
+    .proy{
+        width: 93%;
+    }
+    .contenedor-experiencia{
+        width: 93%;
+    }
 }
-
-
