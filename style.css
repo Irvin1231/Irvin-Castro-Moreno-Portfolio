@@ -335,5 +335,16 @@ body {
     border-radius: 15px;
     padding: 20px;
 }
+@media (max-width: 1230px) {
+    #inicio{
+        flex-direction: column;
+    }
+    .dato{
+        width: 100%;
+    }
+    .ubi h1{
+        font-size: 20px;
+    }
+}
 
 
