@@ -100,14 +100,15 @@ body {
     
 }
 .dato{
-    margin-left: 5%;
-    width: 40%;
+    margin-left: 7%;
+    width: 30%;
+    
     
     
 }
 .ubi{
     width: 90%;
-    height: 95px;
+    height: 80px;
     margin: 10px 0;
     padding: 10px;
     margin-left: 25px;
@@ -337,17 +338,17 @@ body {
 }
 
 /*Adaptación para movil*/
-@media (max-width: 1230px) {
+@media (max-width: 1000px) {
     #mi-menu{
         height: auto; /* Valor por defecto */
         min-height: auto;
-        position: fixed;
+        position: static;
     }
     #mi-menu ul{
         flex-direction: column;
     }
     body {
-    padding-top: 160px; 
+    padding-top: 10px; 
     margin: 0; 
     }
     #inicio{
@@ -356,9 +357,13 @@ body {
     .dato{
         width: 93%;
     }
-    .ubi h1{
+    .ubi h4{
         font-size: 20px;
     }
+    #mi-menu ul li {
+        margin-top: 5px;
+    }
+
     #proyecto{
         flex-direction: column;;
     }
