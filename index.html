@@ -5,15 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Irvin Castro Moreno | Portafolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
+        <!--Menu y logo-->
        <nav id="mi-menu">
             <div class="logo">
-
                 <img src="img/logo.png" alt="Logo" >
-
             </div>   
             <div class="menu-links">
                 <ul>
@@ -26,44 +25,42 @@
                 </ul> 
             </div>
         </nav>
+        <!--Caja de presentación-->
         <section id="inicio">
-                
-                <div class="foto">
-                    <img src="img/irvin.png" alt="Irvin Efren Castro Moreno" class="fotoP">
+            <!--Foto y sobre mi-->
+            <div class="foto">
+                <img src="img/irvin.png" alt="Irvin Efren Castro Moreno" class="fotoP">
+            </div>
+            <div class="dato"> 
+                <h3 class="texto1">¡Hola! Soy </h3>
+                <h1>Irvin Efren Castro Moreno</h1>
+                <h4 class="texto1">Ingeniero en Tecnologas de la Información y Comunicaciones</h4>
+                <p>Soporte técnico e infraestructura TI, administración de Microsoft 365 y automatización de procesos orientados a la mejora operativa</p>
+                <div class="acciones">
+                    <a href="doc/CV_Irvin2.pdf" download="CVIrvin.pdf">      
+                        <button ><i class="fa-solid fa-download"></i>Descargar CV</button>
+                    </a>
                 </div>
-                
-                <div class="dato"> 
-                    <h3 class="texto1">¡Hola! Soy </h3>
-                    <h1>Irvin Efren Castro Moreno</h1>
-                    <h4 class="texto1">Administrador de Sistemas</h4>
-                    <p>Soporte técnico e infraestructura TI, administración de Microsoft 365 y automatización de procesos orientados a la mejora operativa</p>
-                    <div class="acciones">
-                        <a href="doc/CV_Irvin2.pdf" download="CVIrvin.pdf">
-                            
-                            <button ><i class="fa-solid fa-download"></i>Descargar CV</button>
-                        </a>
-                    </div>
+            </div>
+            <!--Cajas de texto -->
+            <div class="dato">
+                <div class="ubi">
+                    <i class="fa-solid fa-location-dot" style="color: #1500ff; font-size: 30px;"></i>
+                    <h4>Estado de México</h4>
                 </div>
-                <div class="dato">
-                    <div class="ubi">
-                        <i class="fa-solid fa-location-dot" style="color: #1500ff; font-size: 30px;"></i>
-                        <h4>Estado de México</h4>
-                    </div>
-
-                    <div class="ubi">
-                        <i class="fa-regular fa-envelope" style="color: #1500ff; font-size: 30px;"></i>
-                        <h4>irvin.efren.2001@gmail.com</h4>
-                    </div>
-                    <div class="ubi">
-                        <i class="fa-regular fa-calendar" style="color: #1500ff; font-size: 30px;"></i>
-                        <h4>Disponible para nuevas oportunidades</h4>
-                    </div>
-
+                <div class="ubi">
+                    <i class="fa-regular fa-envelope" style="color: #1500ff; font-size: 30px;"></i>
+                    <h4>irvin.efren.2001@gmail.com</h4>
                 </div>
-                
+                <div class="ubi">
+                    <i class="fa-regular fa-calendar" style="color: #1500ff; font-size: 30px;"></i>
+                    <h4>Disponible para nuevas oportunidades</h4>
+                </div>
+            </div>
         </section>
-                
-        <section id="experiencia"><!--Caja de exoeriencia y sobre mi-->
+         <!--Caja de exoeriencia y sobre mi-->
+        <section id="experiencia">
+
             <h1 align="center" style="border-bottom: 2px solid #3498db; padding: 20px;" >SOBRE MI</h1>
             <div class="contenedor-cajas">
                     <div class="contenedor-experiencia">
@@ -121,75 +118,106 @@
                 </div>
         
         </section>
-
+        <!--Proyectos-->
         <section id="proyecto">
             <h1 style="border-bottom: 2px solid #3498db; padding: 20px;" >PROYECTOS</h1>
-                <div class="contenedor-cajas">
-                    <div class="proy">
-                        <div class="cabecera">
-                            <i class="fa-solid fa-user" style="font-size: 100px; color:#3498db"></i>
-                            <div class="titulo"> <!--Caja 1-->
-                                <h1>Sistema de Tickets</h1>
-                                <p>Sistema para la gestión y seguimiento de tickets de soporte técnico</p>
+            
+                <div class="slider">
+                    <button class="btnAnterior"><i class="fa-solid fa-chevron-left icono-carrusel"></i></button>
+                    <div class="ventana-carrusel">
+                        <!--Contenedores de cajas-->
+                        <div class="carrusel-proyecto">
+                            <!--Caja 1-->
+                            <div class="proy">
+                                <div class="cabecera">
+                                    <i class="fa-solid fa-user" style="font-size: 100px; color:#3498db"></i>
+                                    <div class="titulo"> <!--Caja 1-->
+                                        <h1>Sistema de Tickets</h1>
+                                        <p>Sistema para la gestión y seguimiento de tickets de soporte técnico</p>
+                                    </div>
+                                </div>
+                                <div class="tecnologias">
+                                        <span>PowerApps</span>
+                                        <span>Sharepoint</span>
+                                        <span>PowerAutomate</span>
+                                        <span>Microsoft Teams</span>
+                                </div>
+                                <div class="acciones">
+                                    <a href="https://github.com/Irvin1231/Powerapps-sistemas-de-tickets" target="_blank">
+                                        <button>Ver Proyecto</button>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tecnologias">
-                            
-                                <span>PowerApps</span>
-                                <span>Sharepoint</span>
-                                <span>PowerAutomate</span>
-                                <span>Microsoft Teams</span>
-                        </div>
-                        <div class="acciones">
-                            <a href="https://github.com/Irvin1231/Powerapps-sistemas-de-tickets" target="_blank">
-                                <button>Ver Proyecto</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="proy">
-                        <div class="cabecera"><!--Caja 2-->
-                            <i class="fa-regular fa-envelope" style="font-size: 100px; color: #3498db;"></i>
+                            <!--Caja 2-->
+                            <div class="proy">
+                                <div class="cabecera"><!--Caja 2-->
+                                    <i class="fa-regular fa-envelope" style="font-size: 100px; color: #3498db;"></i>
 
-                            <div class="titulo">
-                                <h1>Alertas de Dominios</h1>
-                                <p>Control automatizado de dominios con alertas de vencimiento por correo.</p>
+                                    <div class="titulo">
+                                        <h1>Alertas de Dominios</h1>
+                                        <p>Control automatizado de dominios con alertas de vencimiento por correo.</p>
+                                    </div>
+                                </div>
+                                <div class="tecnologias">
+                                    
+                                        <span>Sharepoint</span>
+                                        <span>PowerAutomate</span>
+                                        <span>Microsoft Outlook</span>
+                                </div>
+                                <div class="acciones">
+                                    <a href="https://github.com/Irvin1231/Automatizacion-y-Administracion-de-dominios" target="_blank">
+                                        <button>Ver Proyecto</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Caja 3-->
+                            <div class="proy">
+                                <div class="cabecera"><!--Caja 3-->
+                                    <i class="fa-solid fa-clipboard-list" style="font-size: 100px; color: #3498db;"></i>
+                                    <div class="titulo">
+                                        <h1>Bitacoras Digitales</h1>
+                                        <p>Registro digital centralizado y gestión automatizada de bitácoras de TI.</p>
+                                    </div>
+                                </div>
+                                <div class="tecnologias">
+                                    
+                                        <span>Sharepoint</span>
+                                        <span>PowerAutomate</span>
+                                        <span>Microsoft Teams</span>
+                                </div>
+                                <div class="acciones">
+                                    <a href="https://github.com/Irvin1231/Sistemas-de-Bitacoras-Digitales" target="_blank">
+                                        <button>Ver Proyecto</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Caja 4-->
+                            <div class="proy">
+                                <div class="cabecera"><!--Caja 3-->
+                                    <i class="fa-solid fa-clipboard-list" style="font-size: 100px; color: #3498db;"></i>
+                                    <div class="titulo">
+                                        <h1>Calculadora de Presupuesto Anual</h1>
+                                        <p>Aplicación web desarrollada para facilitar la planificación y control de presupuestos anuales de las diferentes áreas.</p>
+                                    </div>
+                                </div>
+                                <div class="tecnologias">
+                                    
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScrip</span>
+                                </div>
+                                <div class="acciones">
+                                    <a href="https://github.com/Irvin1231/Sistemas-de-Bitacoras-Digitales" target="_blank">
+                                        <button>Ver Proyecto</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="tecnologias">
-                            
-                                <span>Sharepoint</span>
-                                <span>PowerAutomate</span>
-                                <span>Microsoft Outlook</span>
-                        </div>
-                        <div class="acciones">
-                            <a href="https://github.com/Irvin1231/Automatizacion-y-Administracion-de-dominios" target="_blank">
-                                <button>Ver Proyecto</button>
-                            </a>
-                        </div>
                     </div>
-                    <div class="proy">
-                        <div class="cabecera"><!--Caja 3-->
-                            <i class="fa-solid fa-clipboard-list" style="font-size: 100px; color: #3498db;"></i>
-                            <div class="titulo">
-                                <h1>Bitacoras Digitales</h1>
-                                <p>Registro digital centralizado y gestión automatizada de bitácoras de TI.</p>
-                            </div>
-                        </div>
-                        <div class="tecnologias">
-                            
-                                <span>Sharepoint</span>
-                                <span>PowerAutomate</span>
-                                <span>Microsoft Teams</span>
-                        </div>
-                        <div class="acciones">
-                            <a href="https://github.com/Irvin1231/Sistemas-de-Bitacoras-Digitales" target="_blank">
-                                <button>Ver Proyecto</button>
-                            </a>
-                        </div>
-                    </div>
+                    <button class="btnSiguiente"><i class="fa-solid fa-chevron-right icono-carrusel"></i> </button>
                 </div>
-                
         </section>
+        <!--Cursos-->
         <section id="cursos">
             <h1 style="border-bottom: 2px solid #3498db; padding: 20px;" >CURSOS Y CERTIFICACIONES</h1>
             <div class="contenedor-cursos">
@@ -343,9 +371,10 @@
                         </li>
                     </ul>
                 </div>
-
+               <button i class="fa-duotone fa-solid fa-angle-left"></i></button>
             </div>
         </section>
+        <!--Habilidades-->
         <section id="habilidades">
              <h1 style="border-bottom: 2px solid #3498db; padding: 20px;" >HABILIDADES TÉCNICAS</h1> 
              <div class="contenedor-habi">
@@ -366,9 +395,8 @@
                 <span class="habi">Azure • Basico</span>
 
              </div>
-
-
         </section>
+        <!--Contacto-->
         <section id="contacto">
             <h1 style="border-bottom: 2px solid #3498db; padding: 20px;" >CONTACTO</h1>
              <H3>
@@ -391,8 +419,11 @@
             </section>
 
         </section>
+        <!--Fin-->
         <footer id="fin">
             <p>© 2026 Irvin Castro Moreno</p>
         </footer>
+        <script src="js/script.js"></script>
+
     </body>
 </html>
