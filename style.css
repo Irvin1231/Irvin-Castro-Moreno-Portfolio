@@ -1,3 +1,6 @@
+:root{
+    --color-principal: #bbb;
+}
 .fotoP{
     width:300px;
     border-radius:50%;
@@ -6,6 +9,14 @@
 .texto1{
     font-size: 20px;
     color: #1500ff;
+}
+body {
+    /* Empuja todo el contenido hacia abajo para que no lo tape el menú */
+    padding-top: 80px; 
+    
+    
+    /* Opcional: limpia márgenes por defecto del navegador */
+    margin: 0; 
 }
 #mi-menu {
     position: fixed;
@@ -70,14 +81,6 @@
     border-bottom: 2px solid white;
 }
 
-body {
-    /* Empuja todo el contenido hacia abajo para que no lo tape el menú */
-    padding-top: 80px; 
-    
-    
-    /* Opcional: limpia márgenes por defecto del navegador */
-    margin: 0; 
-}
 #inicio{
     width: 98%;
     min-height: 250px;
@@ -93,19 +96,14 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
-    
-
-
-     
-    
 }
+
 .dato{
     margin-left: 7%;
     width: 30%;
     
-    
-    
 }
+
 .ubi{
     width: 90%;
     height: 80px;
@@ -134,14 +132,14 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
+    
 
 }
 .contenedor-experiencia{
     width: 45%;
     min-height: 330px;
     margin: 0 1%;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
     background-color: white;
     padding: 10px;
 }
@@ -160,16 +158,33 @@ body {
 }
 .contenedor-cajas{
     display: flex;
-    justify-content: space-between; 
     width: 100%;
+    gap: 20px;
     
 }
+.ventana-carrusel{
+    flex: 1;
+    min-width: 0;
+    overflow: hidden
+}
+.carrusel-proyecto{
+    display: flex;
+    align-items: stretch;   /* fuerza a todas las cajas a la misma altura */
+    width: 100%;
+    transition: transform 0.5s ease-in-out; 
+}
+.slider{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 .proy{
-    width: 33%;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;     /* evita que se encoja según el contenido */
+    flex-grow: 0;       /* evita que se estire según el contenido */
     min-height: 330px;
     margin: 0 1%;
-    background-color: white;
-    padding: 10px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -210,8 +225,7 @@ body {
 .acciones button{
     font-size: 16px;
     background-color: #3498db;
-    width: 200px;
-    height: 50px;
+    padding: 20px;
     color: white;
     text-align: center;
     cursor: pointer;
@@ -336,7 +350,10 @@ body {
     border-radius: 15px;
     padding: 20px;
 }
-
+.icono-carrusel{
+    font-size: 100px;
+    color: #3498db;
+}
 /*Adaptación para movil*/
 @media (max-width: 1000px) {
     #mi-menu{
@@ -365,13 +382,11 @@ body {
     }
 
     #proyecto{
-        flex-direction: column;;
-    }
-    .contenedor-cajas{
-        flex-direction: column;
+    flex-direction: column;
     }
     .proy{
-        width: 93%;
+    width: 85%;       /* ancho de la tarjeta en móvil */
+    flex-shrink: 0;   /* mantiene la misma regla que en escritorio */
     }
     .contenedor-experiencia{
         width: 93%;
